@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np 
-import pickle
+import joblib
 
 
-model = pickle.load(open('model/model.pkl', 'rb'))
+model = joblib.load('model/model.pkl')
 
 teams = [
     'Australia',
